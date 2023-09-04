@@ -33,7 +33,7 @@ const Register = () => {
             // User profile updated successfully
             console.log("User profile updated successfully");
             console.log(res.user.email);
-            axios.post("https://assignment-12-server-chi-ten.vercel.app/users", {
+            axios.post("https://assignment-12-server-six-black.vercel.app/users", {
               name: res.user.displayName,
               email: res.user.email,
             });

@@ -43,7 +43,7 @@ const AuthProvider = ({ children }) => {
     await getRedirectResult(auth)
       .then(async (res) => {
         console.log(res.user.email);
-        await axios.post("https://assignment-12-server-chi-ten.vercel.app/users", {
+        await axios.post("https://assignment-12-server-six-black.vercel.app/users", {
           name: res.user.displayName,
           email: res.user.email,
         });
@@ -63,7 +63,7 @@ const AuthProvider = ({ children }) => {
         setUser(user);
         setLoading(false);
         axios
-          .post("https://assignment-12-server-chi-ten.vercel.app/jwt", { user: user.email })
+          .post("https://assignment-12-server-six-black.vercel.app/jwt", { user: user.email })
           .then((res) => {
             localStorage.setItem("access_token", res.data.token);
           });

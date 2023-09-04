@@ -30,7 +30,7 @@ const UpdateClassForm = () => {
     // console.log("field from form", updatedCourse);
 
     axiosSecure
-      .put(`https://assignment-12-server-chi-ten.vercel.app/updateclass/${courseId}`, updatedCourse)
+      .put(`https://assignment-12-server-six-black.vercel.app/updateclass/${courseId}`, updatedCourse)
       .then((res) => {
         // console.log(res.data);
         Swal.fire({

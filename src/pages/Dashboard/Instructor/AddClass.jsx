@@ -32,7 +32,7 @@ const AddClass = () => {
     };
 
     {
-      axios.post("https://assignment-12-server-chi-ten.vercel.app/addclass", newCourse).then((res) => {
+      axios.post("https://assignment-12-server-six-black.vercel.app/addclass", newCourse).then((res) => {
         console.log(res.data);
         if (res.data.insertedId) {
           Swal.fire({

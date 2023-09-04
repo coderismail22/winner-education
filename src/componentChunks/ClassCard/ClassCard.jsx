@@ -33,7 +33,7 @@ const ClassCard = ({ item }) => {
     if (user?.email) {
       try {
         const response = await axiosSecure.post(
-          "https://assignment-12-server-chi-ten.vercel.app/cart",
+          "https://assignment-12-server-six-black.vercel.app/cart",
           courseItem
         );
         console.log(response.data);

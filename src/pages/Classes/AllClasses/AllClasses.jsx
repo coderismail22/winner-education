@@ -8,7 +8,7 @@ const AllClasses = () => {
 
   useEffect(() => {
     axios
-      .get("https://assignment-12-server-chi-ten.vercel.app/allclasses")
+      .get("https://assignment-12-server-six-black.vercel.app/allclasses")
       .then((res) => setClasses(res.data));
   }, []);
   return (

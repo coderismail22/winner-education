@@ -8,7 +8,7 @@ import useAxiosSecure from "../../../hooks/useAxiosSecure";
 const AllUsers = () => {
   const [axiosSecure]=useAxiosSecure()
   const { data: users = [], refetch } = useQuery(["users"], async () => {
-    const res = await axiosSecure.get("https://assignment-12-server-chi-ten.vercel.app/users");
+    const res = await axiosSecure.get("https://assignment-12-server-six-black.vercel.app/users");
     return res.data;
   });
   const [adminButtonDisabled, setAdminButtonDisabled] = useState(false);
@@ -17,7 +17,7 @@ const AllUsers = () => {
 
   const handleMakeAdmin = (user) => {
     axiosSecure
-      .patch(`https://assignment-12-server-chi-ten.vercel.app/users/admin/${user.email}`)
+      .patch(`https://assignment-12-server-six-black.vercel.app/users/admin/${user.email}`)
       .then((res) => {
         console.log(res.data);
         if (res.data.modifiedCount) {
@@ -35,7 +35,7 @@ const AllUsers = () => {
 
   const handleMakeInstructor = (user) => {
     axiosSecure
-      .patch(`https://assignment-12-server-chi-ten.vercel.app/users/instructor/${user.email}`)
+      .patch(`https://assignment-12-server-six-black.vercel.app/users/instructor/${user.email}`)
       .then((res) => {
         console.log(res.data);
         if (res.data.modifiedCount) {
@@ -57,10 +57,10 @@ const AllUsers = () => {
       <Helmet>
         <title>Winner Education | Dashboard</title>
       </Helmet>
-      <h1 className="text-center text-2xl text-slate-500 mb-5 uppercase underline">
+      <h1 className="text-center text-2xl text-slate-500 mb-5 uppercase underline ">
         Manage Users: <span className="font-bold">{users.length}</span>
       </h1>
-      <div className="overflow-x-auto">
+      <div className="overflow-x-auto md:overflow-x-hidden">
         <table className="table">
           {/* head */}
           <thead>

@@ -16,7 +16,7 @@ const CheckoutForm = ({ totalPrice, cartData }) => {
   useEffect(() => {
     if (totalPrice > 0) {
       axios
-        .post("https://assignment-12-server-chi-ten.vercel.app/create-payment-intent", { totalPrice })
+        .post("https://assignment-12-server-six-black.vercel.app/create-payment-intent", { totalPrice })
         .then((res) => {
           console.log(res.data.clientSecret);
           setclientSecret(res.data.clientSecret);
@@ -102,7 +102,7 @@ const CheckoutForm = ({ totalPrice, cartData }) => {
         itemImages: cartData.map((item) => item.image)
       };
 
-      axios.post("https://assignment-12-server-chi-ten.vercel.app/payments", payment).then((res) => {
+      axios.post("https://assignment-12-server-six-black.vercel.app/payments", payment).then((res) => {
         console.log(res.data);
         if (res.data) {
           // display confirm

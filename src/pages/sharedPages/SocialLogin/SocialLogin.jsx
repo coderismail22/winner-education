@@ -22,7 +22,7 @@ const SocialLogin = () => {
     //   };
     //   console.log(saveUser)
     //   axios
-    //     .post("https://assignment-12-server-chi-ten.vercel.app/users", saveUser)
+    //     .post("https://assignment-12-server-six-black.vercel.app/users", saveUser)
     //     .then((res) => res.json())
     //     .then(() => {
     //     });

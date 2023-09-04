@@ -23,7 +23,7 @@ const Pending = () => {
     console.log("hit approve");
 
     await axios
-      .post(`https://assignment-12-server-chi-ten.vercel.app/approveclass/${courseId}`)
+      .post(`https://assignment-12-server-six-black.vercel.app/approveclass/${courseId}`)
       .then((res) => {
         console.log(res.data);
         if (res.data) {
@@ -43,7 +43,7 @@ const Pending = () => {
     console.log("hit decline");
 
     await axios
-      .post(`https://assignment-12-server-chi-ten.vercel.app/declineclass/${courseId}`, { feedback })
+      .post(`https://assignment-12-server-six-black.vercel.app/declineclass/${courseId}`, { feedback })
       .then((res) => {
         console.log(res.data);
         if (res.data) {

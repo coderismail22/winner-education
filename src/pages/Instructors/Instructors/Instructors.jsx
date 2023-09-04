@@ -7,7 +7,7 @@ const Instructors = () => {
 
   useEffect(() => {
     axios
-      .get("https://assignment-12-server-chi-ten.vercel.app/allinstructors")
+      .get("https://assignment-12-server-six-black.vercel.app/allinstructors")
       .then((res) => setInstructors(res.data));
   }, []);
   return (

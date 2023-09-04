@@ -13,7 +13,7 @@ const useInstructor = () => {
     enabled: !loading,
     queryFn: async () => {
       const res = await axios.get(
-        `https://assignment-12-server-chi-ten.vercel.app/users/instructor?email=${user?.email}`
+        `https://assignment-12-server-six-black.vercel.app/users/instructor?email=${user?.email}`
       );
       return res.data.instructor;
     },

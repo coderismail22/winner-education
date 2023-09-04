@@ -12,7 +12,7 @@ const Declined = () => {
   useEffect(() => {
     // Fetch courses for the logged-in instructor
     axiosSecure
-      .get(`https://assignment-12-server-chi-ten.vercel.app/instructor-declined-courses/${user.email}`)
+      .get(`https://assignment-12-server-six-black.vercel.app/instructor-declined-courses/${user.email}`)
 
       .then((response) => {
         setCourses(response.data);

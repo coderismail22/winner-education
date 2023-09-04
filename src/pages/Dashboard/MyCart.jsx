@@ -28,7 +28,7 @@ const MyCart = () => {
         if (result.isConfirmed) {
           console.log(itemId);
           const response = await axios.delete(
-            `https://assignment-12-server-chi-ten.vercel.app/cart/${itemId}`
+            `https://assignment-12-server-six-black.vercel.app/cart/${itemId}`
           );
           console.log(response.data); // Item deleted successfully
           refetch();
